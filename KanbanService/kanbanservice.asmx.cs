@@ -21,12 +21,12 @@ namespace KanbanService
         [WebMethod]
         public string HelloWorld( String msg)
         {
-            var Msg = string.Empty;
+            var Msg1 = string.Empty;
             //  Msg = MyJGPush.MyPush.SendPush("新年快乐", "新年快乐！", 1, "s_registrationId：你的设备ID");//IOS设备推送
             //  Msg = MyJGPush.MyPush.SendPush("新年快乐", "新年快乐！", 0, "aaa");//安卓设备推送
-            Msg = MyPush.SendPush("新年快乐", msg, 3, "");//群发
+            Msg1 = MyPush.SendPush("新年快乐", msg, 3, "");//群发
 
-            return Msg;
+            return Msg1;
         }
     }
 }
